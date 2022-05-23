@@ -1,0 +1,15 @@
+Welcome to the Loot Bags Mod!
+This mod adds 5 different obtainable loot bags!
+
+The loot (and the code) has been redone for 1.4! Go to the homepage for more info.
+The aim of the mod is to give you occasional loot that may or may not be helpful. I tried to make it so the loot bags don't completely invalidate parts of the game. 
+
+Tier 1 - Beginning of Game
+Tier 2 - Post Skeletron
+Tier 3 - Post WoF
+Tier 4 - Post Plantera
+Tier 5 - Post Moonlord
+
+(NOT IN THIS VERSION) There are special weapons for each loot bag tier. The weapons get better as you go up the tiers.
+
+Big Thanks to Xray299 and seabass927 for amazing sprites and suggestions!
