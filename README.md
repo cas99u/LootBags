@@ -22,6 +22,7 @@ The Loot Bags config can be accessed from the ingame mod configuration (must be 
 - Dye loot bag was removed because who actually cared about it 
 - Loot Bag NPC was replaced with being able to craft previous loot bag tiers
 - The loot drops from the bags were completely redone (along with the code)
+- Loot Bag weapons were removed (might come back)
 - Mod compatibility is currently unavailable
 
 ## Thanks
