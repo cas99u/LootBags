@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -209,6 +210,7 @@ namespace LootBags.Items
         {
             DisplayName.SetDefault("Loot Bag : Tier 1");
             Tooltip.SetDefault("Right click to open");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
         }
 
         public override void SetDefaults()
@@ -218,6 +220,7 @@ namespace LootBags.Items
             Item.rare = ItemRarityID.White;
             Item.maxStack = 999;
             Item.value = 0;
+            
         }
 
         public override bool CanRightClick()

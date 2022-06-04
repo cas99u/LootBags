@@ -34,22 +34,14 @@ namespace LootBags
             tier2Rule.OnFailedConditions(tier1Drop);
 
             globalLoot.Add(tier5Rule);
-
-            
-
-
         }
-		
-
 	}
 
     public class DownedMoonlord : IItemDropRuleCondition
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-
             return NPC.downedMoonlord;
-
         }
 
         public bool CanShowItemDropInUI()
@@ -67,9 +59,7 @@ namespace LootBags
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-
             return NPC.downedBoss3;
-
         }
 
         public bool CanShowItemDropInUI()
@@ -88,9 +78,7 @@ namespace LootBags
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-
              return !(info.npc.SpawnedFromStatue || info.npc.CountsAsACritter || info.npc.lifeMax <= 5);
-
         }
 
         public bool CanShowItemDropInUI()

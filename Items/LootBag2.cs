@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -115,6 +116,7 @@ namespace LootBags.Items
         {
             DisplayName.SetDefault("Loot Bag : Tier 2");
             Tooltip.SetDefault("Right click to open");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
         }
 
         public override void SetDefaults()
