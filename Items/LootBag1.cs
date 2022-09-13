@@ -203,6 +203,48 @@ namespace LootBags.Items
             bag.AddItem(ItemID.WrathPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.RecallPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.WormholePotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Apple, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Apricot, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Banana, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.BlackCurrant, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.BloodOrange, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Cherry, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Coconut, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Elderberry, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Grapefruit, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Lemon, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Mango, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Peach, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Pineapple, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Plum, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Rambutan, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.BananaSplit, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Burger, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.MilkCarton, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Fries, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.IceCream, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.PotatoChips, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.ShrimpPoBoy, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Spaghetti, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Steak, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Pizza, Amounts.potionMin, Amounts.potionMax, Amounts.veryRare);
+            // Traveling Merchant
+            bag.AddItem(ItemID.ZebraSkin, Amounts.common);
+            bag.AddItem(ItemID.LeopardSkin, Amounts.common);
+            bag.AddItem(ItemID.TigerSkin, Amounts.common);
+            bag.AddItem(ItemID.Katana, Amounts.uncommon);
+            bag.AddItem(ItemID.ActuationAccessory, Amounts.uncommon);
+            bag.AddItem(ItemID.PortableCementMixer, Amounts.uncommon);
+            bag.AddItem(ItemID.PaintSprayer, Amounts.uncommon);
+            bag.AddItem(ItemID.ExtendoGrip, Amounts.uncommon);
+            bag.AddItem(ItemID.BrickLayer, Amounts.uncommon);
+            bag.AddItem(ItemID.Gi, Amounts.rare);
+            bag.AddItem(ItemID.MagicHat, Amounts.rare);
+            bag.AddItem(ItemID.GypsyRobe, Amounts.rare);
+            bag.AddItem(ItemID.AmmoBox, Amounts.rare);
+            bag.AddItem(ItemID.CelestialMagnet, Amounts.veryRare);
+            bag.AddItem(ItemID.WaterGun, Amounts.veryRare);
+
 
             currentTooltip = LootBags.myTooltips[0].text;
         }

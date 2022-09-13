@@ -109,6 +109,15 @@ namespace LootBags.Items
             bag.AddItem(ItemID.TitanPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.GenderChangePotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.PotionOfReturn, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.ChickenNugget, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.CoffeeCup, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.CreamSoda, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Hotdog, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            // Traveling Merchant
+            bag.AddItem(ItemID.Code1, Amounts.rare);
+            bag.AddItem(ItemID.Revolver, Amounts.rare);
+            bag.AddItem(ItemID.SittingDucksFishingRod, Amounts.veryRare);
+            bag.AddItem(ItemID.ZapinatorGray, Amounts.veryRare);
 
             currentTooltip = LootBags.myTooltips[0].text;
         }

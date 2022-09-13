@@ -84,6 +84,11 @@ namespace LootBags.Items
             bag.AddItem(ItemID.ChristmasHook, Amounts.rare);
             bag.AddItem(ItemID.EldMelter, Amounts.rare);
             bag.AddItem(ItemID.ChainGun, Amounts.rare);
+            // Food
+            bag.AddItem(ItemID.BBQRibs, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            // Traveling Merchant
+            bag.AddItem(ItemID.PulseBow, Amounts.veryRare);
+            bag.AddItem(ItemID.Code2, Amounts.rare);
 
             currentTooltip = LootBags.myTooltips[0].text;
 

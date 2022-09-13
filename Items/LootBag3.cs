@@ -120,6 +120,19 @@ namespace LootBags.Items
             bag.AddItem(ItemID.LovePotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.LuckPotionGreater, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
             bag.AddItem(ItemID.TeleportationPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Dragonfruit, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.Starfruit, Amounts.potionMin, Amounts.potionMax, Amounts.common);
+            bag.AddItem(ItemID.ApplePie, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Bacon, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.ChocolateChipCookie, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.FriedEgg, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Grapes, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            bag.AddItem(ItemID.Milkshake, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
+            bag.AddItem(ItemID.Nachos, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
+            // Traveling Merchant
+            bag.AddItem(ItemID.ZapinatorOrange, Amounts.veryRare);
+            bag.AddItem(ItemID.BouncingShield, Amounts.veryRare);
+            bag.AddItem(ItemID.Gatligator, Amounts.veryRare);
 
             currentTooltip = LootBags.myTooltips[0].text;
         }
