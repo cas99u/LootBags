@@ -34,7 +34,6 @@ namespace LootBags
         public Loot Roll(Player player)
         {
             double r = rand.Next(0, totalWeight);
-            r = Math.Min(totalWeight - 1, r + (int)(player.luck * 50));
             foreach (Loot loot in pool)
             {
                 if (loot.weight > r)
@@ -47,10 +46,6 @@ namespace LootBags
             return new Loot(ItemID.DirtBlock, 1);
         }
 
-        public void getModdedLoot(int bagType)
-        {
-            
-        }
 
     }
 }

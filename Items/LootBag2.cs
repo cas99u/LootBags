@@ -123,8 +123,8 @@ namespace LootBags.Items
         }
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Loot Bag : Tier 2");
-            Tooltip.SetDefault("Right click to open");
+            // DisplayName.SetDefault("Loot Bag : Tier 2");
+            // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
         }
 

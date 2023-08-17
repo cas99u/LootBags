@@ -82,7 +82,7 @@ namespace LootBags.Items
             bag.AddItem(ItemID.Razorpine, Amounts.rare);
             bag.AddItem(ItemID.FestiveWings, Amounts.rare);
             bag.AddItem(ItemID.ChristmasHook, Amounts.rare);
-            bag.AddItem(ItemID.EldMelter, Amounts.rare);
+            bag.AddItem(ItemID.ElfMelter, Amounts.rare);
             bag.AddItem(ItemID.ChainGun, Amounts.rare);
             // Food
             bag.AddItem(ItemID.BBQRibs, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
@@ -95,8 +95,8 @@ namespace LootBags.Items
         }
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Loot Bag : Tier 4");
-            Tooltip.SetDefault("Right click to open");
+            // DisplayName.SetDefault("Loot Bag : Tier 4");
+            // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
         }
 

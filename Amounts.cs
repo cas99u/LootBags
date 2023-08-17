@@ -8,7 +8,7 @@ namespace LootBags
 {
     public class Amounts
     {
-        public static int common = 40;
+        public static int common = 50;
         public static int uncommon = 30;
         public static int rare = 15;
         public static int veryRare = 5;

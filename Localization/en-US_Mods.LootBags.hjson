@@ -1,0 +1,62 @@
+Items: {
+	LootBag1: {
+		DisplayName: Loot Bag : Tier 1
+		Tooltip: Right click to open
+	}
+
+	LootBag2: {
+		DisplayName: Loot Bag : Tier 2
+		Tooltip: Right click to open
+	}
+
+	LootBag3: {
+		DisplayName: Loot Bag : Tier 3
+		Tooltip: Right click to open
+	}
+
+	LootBag4: {
+		DisplayName: Loot Bag : Tier 4
+		Tooltip: Right click to open
+	}
+
+	LootBag5: {
+		DisplayName: Loot Bag : Tier 5
+		Tooltip: Right click to open
+	}
+
+	LootBag6: {
+		DisplayName: Loot Bag6
+		Tooltip: ""
+	}
+}
+
+Configs: {
+	Config: {
+		DisplayName: Config
+
+		LootBag1DropChance: {
+			Label: Tier 1 Loot Bag Drop Chance
+			Tooltip: ""
+		}
+
+		LootBag2DropChance: {
+			Label: Tier 2 Loot Bag Drop Chance
+			Tooltip: ""
+		}
+
+		LootBag3DropChance: {
+			Label: Tier 3 Loot Bag Drop Chance
+			Tooltip: ""
+		}
+
+		LootBag4DropChance: {
+			Label: Tier 4 Loot Bag Drop Chance
+			Tooltip: ""
+		}
+
+		LootBag5DropChance: {
+			Label: Tier 5 Loot Bag Drop Chance
+			Tooltip: ""
+		}
+	}
+}

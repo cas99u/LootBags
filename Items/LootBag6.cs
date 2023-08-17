@@ -16,15 +16,11 @@
 //        private String currentTooltip;
 //        public LootBag6()
 //        {
-//            bag.AddItem(ItemID.FragmentSolar, Amounts.common);
 //            bag.AddItem(ItemID.FragmentVortex, Amounts.veryRare);
+//            bag.AddItem(ItemID.FragmentSolar, Amounts.common);
+            
 
 //            currentTooltip = LootBags.myTooltips[0].text;
-//        }
-//        public override void SetStaticDefaults()
-//        {
-//            DisplayName.SetDefault("Loot Bag : Tier Test");
-//            Tooltip.SetDefault("Right click to open");
 //        }
 
 //        public override void SetDefaults()
