@@ -5,5 +5,5 @@ homepage = https://forums.terraria.org/index.php?threads/loot-bags-mod.55797/
 hideCode = false
 hideResources = false
 includeSource = true
-buildIgnore = *.csproj, *.user, *.psd, obj\*, bin\*, .vs\*
+buildIgnore = *.csproj, *.user, *.psd, obj\*, bin\*, .vs\*, *.py, *.csv
 includePDB = true

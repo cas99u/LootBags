@@ -18,20 +18,20 @@ namespace LootBags.Items
         {
             // bag.AddItem(ItemID., Amounts.);
             // Basic Resources
-            bag.AddItem(ItemID.GreaterHealingPotion, 3, 5, Amounts.common);
-            bag.AddItem(ItemID.SuperHealingPotion, 3, 5, Amounts.uncommon);
-            // Pillars/Moonlord
-            bag.AddItem(ItemID.FragmentSolar, 15, 30, Amounts.common);
-            bag.AddItem(ItemID.FragmentVortex, 15, 30, Amounts.common);
-            bag.AddItem(ItemID.FragmentNebula, 15, 30, Amounts.common);
-            bag.AddItem(ItemID.FragmentStardust, 15, 30, Amounts.common);
-            bag.AddItem(ItemID.CelestialSigil, Amounts.uncommon);
-            bag.AddItem(ItemID.LunarBar, Amounts.barMin, Amounts.barMax, Amounts.common);
-            // Martian Madness
-            bag.AddItem(ItemID.LaserDrill, Amounts.uncommon);
-            bag.AddItem(ItemID.ChargedBlasterCannon, Amounts.uncommon);
-            bag.AddItem(ItemID.AntiGravityHook, Amounts.uncommon);
-            bag.AddItem(ItemID.BrainScrambler, Amounts.uncommon);
+            //bag.AddItem(ItemID.GreaterHealingPotion, 3, 5, Amounts.common);
+            //bag.AddItem(ItemID.SuperHealingPotion, 3, 5, Amounts.uncommon);
+            //// Pillars/Moonlord
+            //bag.AddItem(ItemID.FragmentSolar, 15, 30, Amounts.common);
+            //bag.AddItem(ItemID.FragmentVortex, 15, 30, Amounts.common);
+            //bag.AddItem(ItemID.FragmentNebula, 15, 30, Amounts.common);
+            //bag.AddItem(ItemID.FragmentStardust, 15, 30, Amounts.common);
+            //bag.AddItem(ItemID.CelestialSigil, Amounts.uncommon);
+            //bag.AddItem(ItemID.LunarBar, Amounts.barMin, Amounts.barMax, Amounts.common);
+            //// Martian Madness
+            //bag.AddItem(ItemID.LaserDrill, Amounts.uncommon);
+            //bag.AddItem(ItemID.ChargedBlasterCannon, Amounts.uncommon);
+            //bag.AddItem(ItemID.AntiGravityHook, Amounts.uncommon);
+            //bag.AddItem(ItemID.BrainScrambler, Amounts.uncommon);
 
             currentTooltip = LootBags.myTooltips[0].text;
         }
@@ -40,6 +40,7 @@ namespace LootBags.Items
             // DisplayName.SetDefault("Loot Bag : Tier 5");
             // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
+            ItemID.Sets.ShimmerTransformToItem[Type] = ModContent.ItemType<LootBag4>();
         }
 
         public override void SetDefaults()
@@ -54,11 +55,6 @@ namespace LootBags.Items
         public override bool CanRightClick()
         {
             return true;
-        }
-
-        public override void AddRecipes()
-        {
-
         }
 
 

@@ -13,14 +13,17 @@ namespace LootBags
         public static int rare = 15;
         public static int veryRare = 5;
 
-        public static int barMin = 7;
-        public static int barMax = 10;
+        public static int barMin = 8;
+        public static int barMax = 12;
 
         public static int gemMin = 5;
         public static int gemMax = 7;
 
-        public static int potionMin = 2;
+        public static int potionMin = 3;
         public static int potionMax = 5;
+
+        public static int ammoMin = 100;
+        public static int ammoMax = 200;
 
         public static int tierOneChance = LootBags.config.LootBag1DropChance;
         public static int tierTwoChance = LootBags.config.LootBag2DropChance;

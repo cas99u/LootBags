@@ -16,108 +16,138 @@ namespace LootBags.Items
         private String currentTooltip;
         public LootBag2()
         {
-            // bag.AddItem(ItemID., Amounts.);
-            // Basic Resources
-            bag.AddItem(ItemID.HealingPotion, 3, 5, Amounts.common);
-            bag.AddItem(ItemID.DemoniteBar, Amounts.barMin, Amounts.barMax, Amounts.common);
-            bag.AddItem(ItemID.CrimtaneBar, Amounts.barMin, Amounts.barMax, Amounts.common);
-            bag.AddItem(ItemID.MeteoriteBar, Amounts.barMin, Amounts.barMax, Amounts.common);
-            bag.AddItem(ItemID.HellstoneBar, Amounts.barMin, Amounts.barMax, Amounts.uncommon);
-            // Dungeon
-            bag.AddItem(ItemID.Handgun, Amounts.uncommon);
-            bag.AddItem(ItemID.AquaScepter, Amounts.uncommon);
-            bag.AddItem(ItemID.MagicMissile, Amounts.uncommon);
-            bag.AddItem(ItemID.BlueMoon, Amounts.uncommon);
-            bag.AddItem(ItemID.CobaltShield, Amounts.uncommon);
-            bag.AddItem(ItemID.Muramasa, Amounts.uncommon);
-            bag.AddItem(ItemID.ShadowKey, Amounts.uncommon);
-            bag.AddItem(ItemID.Valor, Amounts.uncommon);
-            bag.AddItem(ItemID.BoneWelder, Amounts.uncommon);
-            bag.AddItem(ItemID.GoldenKey, 1, 2, Amounts.common);
-            bag.AddItem(ItemID.Bone, 5, 10, Amounts.common);
-            bag.AddItem(ItemID.BoneWand, Amounts.rare);
-            bag.AddItem(ItemID.ClothierVoodooDoll, Amounts.rare);
-            bag.AddItem(ItemID.WaterBolt, Amounts.uncommon);
-            bag.AddItem(ItemID.AlchemyTable, Amounts.uncommon);
-            bag.AddItem(ItemID.BewitchingTable, Amounts.uncommon);
-            bag.AddItem(ItemID.TallyCounter, Amounts.uncommon);
-            // Jungle
-            bag.AddItem(ItemID.AnkletoftheWind, Amounts.uncommon);
-            bag.AddItem(ItemID.FeralClaws, Amounts.uncommon);
-            bag.AddItem(ItemID.StaffofRegrowth, Amounts.uncommon);
-            bag.AddItem(ItemID.FiberglassFishingPole, Amounts.uncommon);
-            bag.AddItem(ItemID.Boomstick, Amounts.uncommon);
-            bag.AddItem(ItemID.HoneyDispenser, Amounts.uncommon);
-            bag.AddItem(ItemID.FlowerBoots, Amounts.uncommon);
-            bag.AddItem(ItemID.Seaweed, Amounts.rare);
-            bag.AddItem(ItemID.Stinger, 3, 5,  Amounts.common);
-            bag.AddItem(ItemID.JungleSpores, 3, 5, Amounts.common);
-            bag.AddItem(ItemID.NaturesGift, Amounts.uncommon);
-            bag.AddItem(ItemID.Bezoar, Amounts.uncommon);
-            // Hell
-            bag.AddItem(ItemID.DarkLance, Amounts.uncommon);
-            bag.AddItem(ItemID.Sunfury, Amounts.uncommon);
-            bag.AddItem(ItemID.Flamelash, Amounts.uncommon);
-            bag.AddItem(ItemID.FlowerofFire, Amounts.uncommon);
-            bag.AddItem(ItemID.HellwingBow, Amounts.uncommon);
-            bag.AddItem(ItemID.TreasureMagnet, Amounts.uncommon);
-            bag.AddItem(ItemID.HellMinecart, Amounts.uncommon);
-            bag.AddItem(ItemID.OrnateShadowKey, Amounts.uncommon);
-            bag.AddItem(ItemID.HellCake, Amounts.uncommon);
-            bag.AddItem(ItemID.ObsidianRose, Amounts.rare);
-            bag.AddItem(ItemID.DemonScythe, Amounts.rare);
-            bag.AddItem(ItemID.MagmaStone, Amounts.rare);
-            bag.AddItem(ItemID.GuideVoodooDoll, Amounts.uncommon);
-            bag.AddItem(ItemID.HellfireArrow, 25, 50, Amounts.common);
-            bag.AddItem(ItemID.Cascade, Amounts.rare);
-            // Sky
-            bag.AddItem(ItemID.Starfury, Amounts.uncommon);
-            bag.AddItem(ItemID.ShinyRedBalloon, Amounts.uncommon);
-            bag.AddItem(ItemID.SkyMill, Amounts.uncommon);
-            bag.AddItem(ItemID.CreativeWings, Amounts.uncommon);
-            bag.AddItem(ItemID.Feather, 3, 5, Amounts.common);
-            // Fishing
-            bag.AddItem(ItemID.ObsidianSwordfish, Amounts.uncommon);
-            bag.AddItem(ItemID.BottomlessLavaBucket, Amounts.rare);
-            bag.AddItem(ItemID.LavaAbsorbantSponge, Amounts.rare);
-            bag.AddItem(ItemID.DemonConch, Amounts.rare);
-            bag.AddItem(ItemID.Oyster, Amounts.uncommon);
-            bag.AddItem(ItemID.FlameWakerBoots, Amounts.uncommon);
-            bag.AddItem(ItemID.SuperheatedBlood, Amounts.uncommon);
-            bag.AddItem(ItemID.LavaFishbowl, Amounts.uncommon);
-            bag.AddItem(ItemID.LavaFishingHook, Amounts.uncommon);
-            bag.AddItem(ItemID.VolcanoSmall, Amounts.uncommon);
-            bag.AddItem(ItemID.PotSuspended, 1, 2, Amounts.uncommon);
-            bag.AddItem(ItemID.WetBomb, 7, 10,  Amounts.uncommon);
-            // Potions
-            bag.AddItem(ItemID.AmmoReservationPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.BuilderPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.CalmingPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.CratePotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.FeatherfallPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.FishingPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.GravitationPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.InfernoPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.InvisibilityPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.LuckPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.MagicPowerPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.ManaRegenerationPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.ObsidianSkinPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.SpelunkerPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.SummoningPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.ThornsPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.TitanPotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.GenderChangePotion, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.PotionOfReturn, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.ChickenNugget, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.CoffeeCup, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            bag.AddItem(ItemID.CreamSoda, Amounts.potionMin, Amounts.potionMax, Amounts.rare);
-            bag.AddItem(ItemID.Hotdog, Amounts.potionMin, Amounts.potionMax, Amounts.uncommon);
-            // Traveling Merchant
-            bag.AddItem(ItemID.Code1, Amounts.rare);
-            bag.AddItem(ItemID.Revolver, Amounts.rare);
-            bag.AddItem(ItemID.SittingDucksFishingRod, Amounts.veryRare);
-            bag.AddItem(ItemID.ZapinatorGray, Amounts.veryRare);
+            bag.Add(ItemID.LifeCrystal, 2, 3, Amounts.uncommon)
+            .Add(ItemID.UnholyArrow, 100, 200, Amounts.common)
+            .Add(ItemID.JestersArrow, 100, 200, Amounts.uncommon)
+            .Add(ItemID.DemoniteBar, 8, 12, Amounts.uncommon)
+            .Add(ItemID.Vilethorn, Amounts.uncommon)
+            .Add(ItemID.Starfury, Amounts.uncommon)
+            .Add(ItemID.GoldCoin, 5, 10, Amounts.rare)
+            .Add(ItemID.PlatinumCoin, Amounts.veryRare)
+            .Add(ItemID.FallenStar, 15, 25, Amounts.common)
+            .Add(ItemID.Musket, Amounts.uncommon)
+            .Add(ItemID.MusketBall, 100, 200, Amounts.common)
+            .Add(ItemID.BandofStarpower, Amounts.uncommon)
+            .Add(ItemID.FlowerofFire, Amounts.rare)
+            .Add(ItemID.MagicMissile, Amounts.rare)
+            .Add(ItemID.ShadowOrb, Amounts.uncommon)
+            .Add(ItemID.MeteoriteBar, 8, 12, Amounts.common)
+            .Add(ItemID.Bone, 10, 25, Amounts.common)
+            .Add(ItemID.Muramasa, Amounts.rare)
+            .Add(ItemID.CobaltShield, Amounts.rare)
+            .Add(ItemID.AquaScepter, Amounts.rare)
+            .Add(ItemID.LuckyHorseshoe, Amounts.uncommon)
+            .Add(ItemID.ShinyRedBalloon, Amounts.uncommon)
+            .Add(ItemID.Harpoon, Amounts.uncommon)
+            .Add(ItemID.BallOHurt, Amounts.uncommon)
+            .Add(ItemID.BlueMoon, Amounts.rare)
+            .Add(ItemID.Handgun, Amounts.rare)
+            .Add(ItemID.WaterBolt, Amounts.rare)
+            .Add(ItemID.AshBlock, 25, 100, Amounts.common)
+            .Add(ItemID.Obsidian, 15, 25, Amounts.common)
+            .Add(ItemID.HellstoneBar, 8, 12, Amounts.common)
+            .Add(ItemID.HealingPotion, 3, 5, Amounts.common)
+            .Add(ItemID.ManaPotion, 3, 5, Amounts.common)
+            .Add(ItemID.Stinger, 3, 5, Amounts.common)
+            .Add(ItemID.Vine, 1, 3, Amounts.uncommon)
+            .Add(ItemID.FeralClaws, Amounts.rare)
+            .Add(ItemID.AnkletoftheWind, Amounts.rare)
+            .Add(ItemID.StaffofRegrowth, Amounts.rare)
+            .Add(ItemID.Flamelash, Amounts.rare)
+            .Add(ItemID.Sunfury, Amounts.rare)
+            .Add(ItemID.NaturesGift, Amounts.rare)
+            .Add(ItemID.RestorationPotion, 3, 5, Amounts.common)
+            .Add(ItemID.MeteorShot, 100, 200, Amounts.uncommon)
+            .Add(ItemID.HellfireArrow, 100, 200, Amounts.rare)
+            .Add(ItemID.GuideVoodooDoll, Amounts.rare)
+            .Add(ItemID.DemonScythe, Amounts.veryRare)
+            .Add(ItemID.DarkLance, Amounts.rare)
+            .Add(ItemID.SilverBullet, 100, 200, Amounts.uncommon)
+            .Add(ItemID.ObsidianSkinPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.GravitationPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.Fireblossom, 3, 5, Amounts.common)
+            .Add(ItemID.Feather, 3, 5, Amounts.common)
+            .Add(ItemID.GoldenKey, 1, 2, Amounts.uncommon)
+            .Add(ItemID.ShadowKey, Amounts.rare)
+            .Add(ItemID.JungleSpores, 3, 5, Amounts.uncommon)
+            .Add(ItemID.RichMahogany, 25, 100, Amounts.common)
+            .Add(ItemID.RedPotion, Amounts.veryRare)
+            .Add(ItemID.Marrow, Amounts.rare)
+            .Add(ItemID.Cloud, 25, 100, Amounts.common)
+            .Add(ItemID.Seaweed, Amounts.rare)
+            .Add(ItemID.TheUndertaker, Amounts.uncommon)
+            .Add(ItemID.TheMeatball, Amounts.uncommon)
+            .Add(ItemID.TheRottedFork, Amounts.uncommon)
+            .Add(ItemID.Bezoar, Amounts.rare)
+            .Add(ItemID.Megaphone, Amounts.rare)
+            .Add(ItemID.Nazar, Amounts.rare)
+            .Add(ItemID.BoneWand, Amounts.rare)
+            .Add(ItemID.Boomstick, Amounts.rare)
+            .Add(ItemID.Abeemination, Amounts.rare)
+            .Add(ItemID.BottledHoney, 3, 7, Amounts.common)
+            .Add(ItemID.CrimsonRod, Amounts.uncommon)
+            .Add(ItemID.CrimtaneBar, 8, 12, Amounts.uncommon)
+            .Add(ItemID.PanicNecklace, Amounts.uncommon)
+            .Add(ItemID.ClothierVoodooDoll, Amounts.rare)
+            .Add(ItemID.KOCannon, Amounts.rare)
+            .Add(ItemID.PirateMap, Amounts.rare)
+            .Add(ItemID.MagmaStone, Amounts.rare)
+            .Add(ItemID.ObsidianRose, Amounts.rare)
+            .Add(ItemID.HeartLantern, 2, 5, Amounts.uncommon)
+            .Add(ItemID.CelestialMagnet, Amounts.uncommon)
+            .Add(ItemID.Revolver, Amounts.uncommon)
+            .Add(ItemID.TitanPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.AmmoReservationPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.EndurancePotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.RagePotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.InfernoPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.WrathPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.TeleportationPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.StinkPotion, 3, 5, Amounts.veryRare)
+            .Add(ItemID.FishingPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.SonarPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.CratePotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.AnglerHat, Amounts.rare)
+            .Add(ItemID.AnglerVest, Amounts.rare)
+            .Add(ItemID.AnglerPants, Amounts.rare)
+            .Add(ItemID.HighTestFishingLine, Amounts.rare)
+            .Add(ItemID.AnglerEarring, Amounts.rare)
+            .Add(ItemID.TackleBox, Amounts.rare)
+            .Add(ItemID.JourneymanBait, 3, 5, Amounts.common)
+            .Add(ItemID.GenderChangePotion, Amounts.veryRare)
+            .Add(ItemID.BewitchingTable, Amounts.rare)
+            .Add(ItemID.AlchemyTable, Amounts.rare)
+            .Add(ItemID.FlowerBoots, Amounts.uncommon)
+            .Add(ItemID.HellwingBow, Amounts.rare)
+            .Add(ItemID.BottomlessBucket, Amounts.rare)
+            .Add(ItemID.SuperAbsorbantSponge, Amounts.rare)
+            .Add(ItemID.FishFinder, Amounts.rare)
+            .Add(ItemID.WeatherRadio, Amounts.rare)
+            .Add(ItemID.CrimsonHeart, Amounts.uncommon)
+            .Add(ItemID.TallyCounter, Amounts.rare)
+            .Add(ItemID.Sextant, Amounts.rare)
+            .Add(ItemID.Stopwatch, Amounts.uncommon)
+            .Add(ItemID.MetalDetector, Amounts.uncommon)
+            .Add(ItemID.LifeformAnalyzer, Amounts.uncommon)
+            .Add(ItemID.DPSMeter, Amounts.uncommon)
+            .Add(ItemID.FishermansGuide, Amounts.rare)
+            .Add(ItemID.SharpeningStation, Amounts.rare)
+            .Add(ItemID.VampireFrogStaff, Amounts.uncommon)
+            .Add(ItemID.BloodFishingRod, Amounts.rare)
+            .Add(ItemID.ZapinatorGray, Amounts.rare)
+            .Add(ItemID.BloodRainBow, Amounts.uncommon)
+            .Add(ItemID.CombatBook, Amounts.rare)
+            .Add(ItemID.LuckPotion, 3, 5, Amounts.uncommon)
+            .Add(ItemID.GardenGnome, 1, 2, Amounts.rare)
+            .Add(ItemID.DemonConch, Amounts.rare)
+            .Add(ItemID.BottomlessLavaBucket, Amounts.rare)
+            .Add(ItemID.FlameWakerBoots, Amounts.rare)
+            .Add(ItemID.SuperheatedBlood, Amounts.rare)
+            .Add(ItemID.LavaAbsorbantSponge, Amounts.rare)
+            .Add(ItemID.CreativeWings, Amounts.uncommon)
+            .Add(ItemID.TreasureMagnet, Amounts.rare)
+            .Add(ItemID.BottomlessHoneyBucket, Amounts.rare)
+            .Add(ItemID.HoneyAbsorbantSponge, Amounts.rare);
 
             currentTooltip = LootBags.myTooltips[0].text;
         }
@@ -126,6 +156,7 @@ namespace LootBags.Items
             // DisplayName.SetDefault("Loot Bag : Tier 2");
             // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
+            ItemID.Sets.ShimmerTransformToItem[Type] = ModContent.ItemType<LootBag1>();
         }
 
         public override void SetDefaults()
@@ -140,13 +171,6 @@ namespace LootBags.Items
         public override bool CanRightClick()
         {
             return true;
-        }
-
-        public override void AddRecipes()
-        {
-            CreateRecipe(2)
-                .AddIngredient(ModContent.ItemType<LootBag3>(), 1)
-                .Register();
         }
 
 

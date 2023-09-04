@@ -15,20 +15,23 @@ namespace LootBags
         private int totalWeight = 0;
         private Random rand = new Random();
 
-        public void AddItem(int id, int min, int max, int weight)
+        public Bag Add(int id, int min, int max, int weight)
         {
             totalWeight += weight;
             pool.Add(new Loot(id, min, max, weight));
+            return this;
         }
-        public void AddItem(int id, int weight)
+        public Bag Add(int id, int weight)
         {
             totalWeight += weight;
             pool.Add(new Loot(id, weight));
+            return this;
         }
 
-        public void AddItem(Loot loot)
+        public Bag Add(Loot loot)
         {
             pool.Add(loot);
+            return this;
         }
 
         public Loot Roll(Player player)
@@ -43,7 +46,7 @@ namespace LootBags
 
                 r -= loot.weight;
             }
-            return new Loot(ItemID.DirtBlock, 1);
+            return new Loot(ItemID.AlphabetStatue0, 1); // This shouldn't happen
         }
 
 
