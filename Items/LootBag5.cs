@@ -16,22 +16,31 @@ namespace LootBags.Items
         private String currentTooltip;
         public LootBag5()
         {
-            // bag.AddItem(ItemID., Amounts.);
-            // Basic Resources
-            //bag.AddItem(ItemID.GreaterHealingPotion, 3, 5, Amounts.common);
-            //bag.AddItem(ItemID.SuperHealingPotion, 3, 5, Amounts.uncommon);
-            //// Pillars/Moonlord
-            //bag.AddItem(ItemID.FragmentSolar, 15, 30, Amounts.common);
-            //bag.AddItem(ItemID.FragmentVortex, 15, 30, Amounts.common);
-            //bag.AddItem(ItemID.FragmentNebula, 15, 30, Amounts.common);
-            //bag.AddItem(ItemID.FragmentStardust, 15, 30, Amounts.common);
-            //bag.AddItem(ItemID.CelestialSigil, Amounts.uncommon);
-            //bag.AddItem(ItemID.LunarBar, Amounts.barMin, Amounts.barMax, Amounts.common);
-            //// Martian Madness
-            //bag.AddItem(ItemID.LaserDrill, Amounts.uncommon);
-            //bag.AddItem(ItemID.ChargedBlasterCannon, Amounts.uncommon);
-            //bag.AddItem(ItemID.AntiGravityHook, Amounts.uncommon);
-            //bag.AddItem(ItemID.BrainScrambler, Amounts.uncommon);
+            bag.Add(ItemID.GoldBird, Amounts.uncommon)
+            .Add(ItemID.GoldBunny, Amounts.uncommon)
+            .Add(ItemID.GoldButterfly, Amounts.uncommon)
+            .Add(ItemID.GoldFrog, Amounts.uncommon)
+            .Add(ItemID.GoldGrasshopper, Amounts.uncommon)
+            .Add(ItemID.GoldMouse, Amounts.uncommon)
+            .Add(ItemID.GoldWorm, Amounts.uncommon)
+            .Add(ItemID.FragmentVortex, 8, 12, Amounts.common)
+            .Add(ItemID.FragmentNebula, 8, 12, Amounts.common)
+            .Add(ItemID.FragmentSolar, 8, 12, Amounts.common)
+            .Add(ItemID.FragmentStardust, 8, 12, Amounts.common)
+            .Add(ItemID.LunarBar, 8, 12, Amounts.common)
+            .Add(ItemID.SuperHealingPotion, 3, 5, Amounts.common)
+            .Add(ItemID.SquirrelGold, Amounts.uncommon)
+            .Add(ItemID.MoonlordBullet, 100, 200, Amounts.common)
+            .Add(ItemID.MoonlordArrow, 100, 200, Amounts.common)
+            .Add(ItemID.CelestialSigil, Amounts.rare)
+            .Add(ItemID.GoldGoldfish, Amounts.uncommon)
+            .Add(ItemID.GoldDragonfly, Amounts.uncommon)
+            .Add(ItemID.GoldLadyBug, Amounts.uncommon)
+            .Add(ItemID.GoldWaterStrider, Amounts.uncommon)
+            .Add(ItemID.GoldSeahorse, Amounts.uncommon)
+            .Add(ItemID.TerraToilet, Amounts.veryRare)
+            .Add(ItemID.MoonLordLegs, Amounts.veryRare)
+            .Add(ItemID.BottomlessShimmerBucket, Amounts.rare);
 
             currentTooltip = LootBags.myTooltips[0].text;
         }
@@ -40,7 +49,6 @@ namespace LootBags.Items
             // DisplayName.SetDefault("Loot Bag : Tier 5");
             // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
-            ItemID.Sets.ShimmerTransformToItem[Type] = ModContent.ItemType<LootBag4>();
         }
 
         public override void SetDefaults()
@@ -89,6 +97,14 @@ namespace LootBags.Items
             {
                 return getTooltip(tooltips, player);
             }
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<LootBag5>()
+                .AddCustomShimmerResult(ModContent.ItemType<LootBag4>(), 2)
+                .Register();
         }
     }
 

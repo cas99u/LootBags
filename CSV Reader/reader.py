@@ -1,7 +1,7 @@
 
 import csv
  
-with open('2.csv', mode ='r')as file:
+with open('5.csv', mode ='r')as file:
    
     csvFile = csv.reader(file, delimiter = ',')
     lootList = list(csvFile)

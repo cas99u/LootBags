@@ -156,7 +156,6 @@ namespace LootBags.Items
             // DisplayName.SetDefault("Loot Bag : Tier 2");
             // Tooltip.SetDefault("Right click to open");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 10;
-            ItemID.Sets.ShimmerTransformToItem[Type] = ModContent.ItemType<LootBag1>();
         }
 
         public override void SetDefaults()
@@ -205,6 +204,14 @@ namespace LootBags.Items
             {
                 return getTooltip(tooltips, player);
             }
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<LootBag2>()
+                .AddCustomShimmerResult(ModContent.ItemType<LootBag1>(), 2)
+                .Register();
         }
     }
 
